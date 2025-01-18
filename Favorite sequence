@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cin>>a;
+    while(a--){
+        int n;
+        cin>>n;
+        int c[1000],d[1000];
+        for(int i=0;i<n;i++){
+            cin>>c[i];
+        }
+    int l=0,r=n-1,i=0;
+    while(l<=r){
+        d[i++]=c[l++];
+        if(l<=r){
+            d[i++]=c[r--];
+        }
+    }
+    for(int j=0;j<n;j++){
+        cout<<d[j]<<" ";
+    }
+    cout<<endl;
+    }
+}
