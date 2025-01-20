@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t>0){
+        int n;
+        cin>>n;
+        if(n%7==0){
+            cout<<n<<endl;
+        }
+        else{
+            for(int i=0;i<10;i++){
+                int a=(n/10)*10+i;
+                if(a%7==0){
+                    cout<<a<<endl;
+                    break;
+                }
+            }
+        }
+        t--;
+    }
+  }
