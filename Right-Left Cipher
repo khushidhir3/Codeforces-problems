@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string s;
+    cin>>s;
+   vector<char>a;
+   int n=s.size();
+   int left=n-1;
+   int right=0;
+   for(int i=n;i>=1;i--){
+       if(i%2==0){
+           a.push_back(s[left]);
+           left--;
+       }
+       else{
+           a.push_back(s[right]);
+           right++;
+       }
+   }
+   reverse(a.begin(),a.end());
+   for(char c: a){
+       cout<<c;
+   }
+   cout<<endl;
+}
