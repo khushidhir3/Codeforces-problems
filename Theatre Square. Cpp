@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main(){
+    long long n,m,a;
+    cin>>n>>m>>a;
+    long long flagstonesofn=(n+a -1)/a;
+    long long flagstonesofm=(m+a-1)/a;
+    cout<<flagstonesofn*flagstonesofm<<endl;
+}
